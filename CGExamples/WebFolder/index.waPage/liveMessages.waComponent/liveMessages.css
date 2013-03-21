@@ -13,46 +13,6 @@
 	 
 }
 
-#{id}button4 {
-	 width: 150px;
-	 height: 50px;
-	 top: 657px;
-	 left: 587px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}button3 {
-	 width: 150px;
-	 height: 50px;
-	 top: 658px;
-	 left: 405px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}button2 {
-	 width: 150px;
-	 height: 50px;
-	 top: 658px;
-	 left: 222px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}button1 {
-	 width: 150px;
-	 height: 50px;
-	 top: 658px;
-	 left: 33px;
-	
-	 position: absolute;
-	 
-}
-
 #{id}richText5 {
 	 height: 145px;
 	 top: 375px;
