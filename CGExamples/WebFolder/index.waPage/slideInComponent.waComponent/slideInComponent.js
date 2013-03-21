@@ -1,4 +1,7 @@
-﻿
+﻿var activeCon = "";
+
+
+
 (function Component (id) {// @lock
 
 // Add the code that needs to be shared between components here
@@ -107,6 +110,6 @@ function constructor (id) {
 }// @startlock
 return constructor;
 })();// @endlock
-debugger;
-var activeCon = "";
+
+
 

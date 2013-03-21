@@ -3,6 +3,21 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#richText1 {
+	 width: 165px;
+	 height: 22px;
+	 top: 11px;
+	 left: 19px;
+	
+	 position: absolute;
+	 font-size: 16px;
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
+	 border-bottom-width: 0px;
+	 
+}
+
 #combobox1 {
 	 width: 164px;
 	 height: 24px;
@@ -10,18 +25,6 @@
 	 left: 19px;
 	
 	 position: absolute;
-	 
-}
-
-#label1 {
-	 width: 78px;
-	 height: 20px;
-	 top: 15px;
-	 left: 19px;
-	
-	 position: absolute;
-	 max-width: 3000px;
-	 font-size: 16px;
 	 
 }
 
