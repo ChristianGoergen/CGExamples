@@ -1,5 +1,4 @@
-﻿var activeCon = "";
-
+﻿isTransitioning = false;
 
 
 (function Component (id) {// @lock
@@ -8,12 +7,22 @@
 
 
 function constructor (id) {
-	
+		var activeCon = "";
 
-	function slideMenu () {
 		// get the IDs
 		con1 = getHtmlId('con1');
 		con2 = getHtmlId('con2');
+		// get the position
+		con1_top = $$(con1).getPosition().top;
+		con1_left = $$(con1).getPosition().left;
+
+	function slideMenu () {
+
+		// this to prevent clicking while still an animation goes on
+		isTransitioning = true;
+		setTimeout(function(){
+			isTransitioning = false;
+		}, 600);
 		// move the container to the start possition (mostly not visible)
 		if(activeCon != ""){
 			if(activeCon == con2){
@@ -27,13 +36,15 @@ function constructor (id) {
 					left: '-=1000'
 				 		}, 500, function() {
 							$('#'+con2).animate({
-								top: '-=500'
+								//top: '-=500'
+								top: con1_top - 500
 							 		}, 0, function() {
 							 			activeCon = con1;
 							 		}
 								);
 							$('#'+con2).animate({
-								left: '+=1000'
+								left: con1_left
+								//left: '+=1000'
 							 		}, 0, function() {
 							 			activeCon = con1;
 							 		}
@@ -45,13 +56,16 @@ function constructor (id) {
 					left: '-=1000'
 					 	}, 500, function() {
 						$('#'+con1).animate({
-							left: '+=1000'
+							left: con1_left
+//							left: '+=1000'
 							 	}, 0, function() {		
 							 		activeCon = con2;
 							 	}
 							);
 						$('#'+con1).animate({
-							top: '-=500'
+//							top: '-=500'
+							top: con1_top - 500
+
 							 	}, 0, function() {		
 							 		activeCon = con2;
 							 	}
@@ -68,17 +82,21 @@ function constructor (id) {
 			}
 		if (activeCon == ""){
 			$('#'+con2).animate({
-				top: '-=500'
+//				top: '-=500'
+				top: con1_top - 500
+
 			 		}, 0, function() {}
 				);
 			$('#'+con1).animate({
-				top: '-=500'
+//				top: '-=500'
+				top: con1_top - 500				
 				 	}, 0, function() {
 					$('#'+con1).animate({top: '+=500'}, 500, function() {activeCon = con1});
 					}
 				);
 			}
 		}
+
 	slideMenu();
 	
 	// @region beginComponentDeclaration// @startlock
@@ -96,7 +114,9 @@ function constructor (id) {
 
 	button1.click = function button1_click (event)// @startlock
 	{// @endlock
+		if(isTransitioning==false){
 		slideMenu();
+	}else{};
 
 	};// @lock
 
