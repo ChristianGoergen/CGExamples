@@ -1,1 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><EntityModelCatalog><dbInfo uuid="DEB2380315EE8E47AF7052ECFC4FADBC" collation_locale="fr"/></EntityModelCatalog>
+﻿<?xml version="1.0" encoding="UTF-8"?><EntityModelCatalog>
+
+<dbInfo name="Model" uuid="DEB2380315EE8E47AF7052ECFC4FADBC"/>
+
+<extraProperties ____objectunic="true" version="1">
+
+	<classes ____objectunic="true">
+
+		<LiveMessages ____objectunic="true" panelColor="#4FA997">
+
+			<panel ____objectunic="true" isOpen="true" pathVisible="true">
+
+				<position ____objectunic="true" X="25" Y="20"/>
+
+			</panel>
+
+		</LiveMessages>
+
+	</classes>
+
+	<model ____objectunic="true" workspaceLeft="0" workspaceTop="0"/>
+
+</extraProperties>
+
+<dataClasses collectionName="LiveMessagesCollection" className="LiveMessages">
+
+	<attributes name="ID" kind="storage" type="long" autosequence="true" unique="true" primKey="true"/>
+
+	<attributes name="theText" scope="public" type="string" kind="storage"/>
+
+	<attributes name="theDate" scope="public" type="date" kind="storage"/>
+
+	<attributes name="from" scope="public" type="string" kind="storage"/>
+
+</dataClasses>
+</EntityModelCatalog>

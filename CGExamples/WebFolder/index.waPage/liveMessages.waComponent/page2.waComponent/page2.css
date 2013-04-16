@@ -3,11 +3,36 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+.waf-widget.waf-clone-{id}richText1 {
+	 position: absolute;
+	 
+}
+
+#{id}richText1 {
+	 width: 296px;
+	 height: 20px;
+	 top: 10px;
+	 left: 10px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}matrix1 {
+	 width: 500px;
+	 height: 500px;
+	 top: 227px;
+	 left: 208px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}button4 {
 	 width: 92px;
 	 height: 22px;
-	 top: 88px;
-	 left: 316px;
+	 top: 90px;
+	 left: 318px;
 	
 	 position: absolute;
 	 
@@ -16,7 +41,7 @@
 #{id}button3 {
 	 width: 92px;
 	 height: 22px;
-	 top: 91px;
+	 top: 90px;
 	 left: 439px;
 	
 	 position: absolute;
@@ -26,8 +51,8 @@
 #{id}button2 {
 	 width: 119px;
 	 height: 22px;
-	 top: 89px;
-	 left: 172px;
+	 top: 90px;
+	 left: 171px;
 	
 	 position: absolute;
 	 
